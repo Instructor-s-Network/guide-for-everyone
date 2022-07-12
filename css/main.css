@@ -1,0 +1,264 @@
+@import url(reset.css);
+@import url(./fonts/fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+body {
+  background-color: #151513;
+  padding: 32px;
+  cursor: url('../images/cursor.svg'), auto;
+
+  -ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.main {
+  background-color: #282826;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  border-radius: 32px;
+  overflow: scroll;
+  padding: 48px;
+
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.information {
+  justify-content: space-between;
+  display: flex;
+}
+
+.testInfo {
+  justify-content: space-between;
+  display: flex;
+
+  position: fixed;
+}
+
+.h1 {
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 90%;
+}
+
+.h1des {
+  color: #A9A9A8;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.frame {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+}
+
+.button {
+  background-color: #7D4AA9;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 3vw 5vw;
+  border-radius: 100vw;
+
+  transition: 0.5s;
+}
+
+.button:hover {
+  padding: 3.1vw 5.1vw;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.75);
+  cursor: url('../images/cursor-hover.svg'), pointer;
+}
+
+.finishTest {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+}
+
+.text {
+  font-family: 'Inter 100', sans-serif;
+  color: #FFFFFF;
+  width: 43vw;
+  font-size: 24px;
+}
+
+.text p:nth-child(2) {
+  margin-top: 0.5vw;
+  color: #D0471D;
+}
+
+.time {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  color: #A9A9A8;
+  font-size: 48px;
+}
+
+.test {
+  font-family: 'Inter 100', sans-serif;
+  padding: 12px 16px 0px;
+  justify-content: center;
+  display: inline-block;
+}
+
+.user-info_container p:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.question_container {
+  margin: auto;
+
+  width: 44.84375vw;
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  border-radius: 32px;
+  padding: 32px;
+  margin-bottom: 16px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.question_container p:nth-child(1) {
+  margin-bottom: 16px;
+}
+.question_container p:nth-child(2) {
+  margin-bottom: 8px;
+}
+.question_container p:nth-child(3) {
+  margin-bottom: 8px;
+}
+.question_container p:nth-child(4) {
+  margin-bottom: 8px;
+}
+.question_container p:nth-child(5) {
+  margin-bottom: 16px;
+}
+.question_container p:nth-child(6) {
+  margin-bottom: 8px;
+  color: #A9A9A8;
+  font-size: 16px;
+}
+
+.test div:nth-child(11) {
+  margin-bottom: 0px;
+}
+
+.input {
+  background: none;
+  padding: 16px 24px;
+  border-radius: 166px;
+  border: 2px solid #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.input:hover {
+  cursor: url('../images/cursor-hover.svg'), auto;
+}
+
+.input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.15);
+  outline-width: 0px;
+}
+
+@media screen and (max-width: 1680px) {
+  .main {
+    padding: 32px;
+  }
+  .h1 {
+    font-size: 80px;
+  }
+  .h1des {
+    font-size: 12px;
+  }
+  .finishTest {
+    bottom: 64px;
+    right: 64px;
+  }
+  .text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .main {
+    padding: 32px;
+  }
+  .h1 {
+    font-size: 64px;
+  }
+  .h1des {
+    font-size: 12px;
+  }
+  .button {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .main {
+    padding: 32px;
+  }
+  .h1 {
+    font-size: 56px;
+  }
+  .h1des {
+    font-size: 12px;
+  }
+  .button {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 22px;
+  }
+  .question_container {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main {
+    padding: 32px;
+  }
+  .h1 {
+    font-size: 56px;
+  }
+  .h1des {
+    font-size: 12px;
+  }
+  .button {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .question_container {
+    font-size: 16px;
+  }
+}
