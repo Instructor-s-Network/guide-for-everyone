@@ -55,9 +55,6 @@ body {
 }
 
 .testInfo {
-  justify-content: space-between;
-  display: flex;
-
   position: fixed;
 }
 
@@ -115,6 +112,9 @@ body {
   font-weight: 500;
   color: var(--light-gray);
   font-size: 64px;
+  
+  position: fixed;
+  right: 80px;
 }
 
 .test {

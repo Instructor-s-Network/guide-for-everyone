@@ -281,7 +281,7 @@ function createTest() {
   time = document.createElement('p')
   time.classList.add('time')
   time.textContent = minutes + ':0' + seconds;
-  info.appendChild(time);
+  container.appendChild(time);
 
   test = document.createElement('div')
   test.classList.add('test')
@@ -332,8 +332,8 @@ function createTest() {
 
   window.onblur = function() {
     console.log('Кто-то вышел');
-    clearInterval(timerId);
-    windowClosed()
+    //clearInterval(timerId);
+    //windowClosed()
   }
 
   but = document.createElement('button')
@@ -352,8 +352,6 @@ function createTest() {
 }
 
 function timer(){
-  let infoBlock = document.getElementsByClassName('testInfo')[0]
-  infoBlock.style.width = (window.innerWidth - 160) + 'px';
 
   if ((minutes >= 0) && (seconds > 0)){
     --seconds;
