@@ -2,6 +2,16 @@
 @import url(./fonts/fonts.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
+:root {
+  --dark-gray: #070707;
+  --mid-gray: #1F1F1F;
+  --gray: #353535;
+  --light-gray: #868686;
+  --absolute-white: #FFFFFF;
+  --violet: #3D2476;
+  --red: #D0471D;
+}
+
 body {
   background-color: #151513;
   padding: 32px;
