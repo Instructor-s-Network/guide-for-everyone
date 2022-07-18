@@ -43,7 +43,7 @@ body {
   display: none;
 }
 
-.h1, .h1des, .button, .text, .time, .test, .question_container, .input {
+.h1, .h1des, .button, .text, .time, .test, .question_container, .input, .phoneDescription {
   font-family: 'Inter', sans-serif;
   color: var(--absolute-white);
   line-height: 104%;
@@ -112,7 +112,7 @@ body {
   font-weight: 500;
   color: var(--light-gray);
   font-size: 64px;
-  
+
   position: fixed;
   right: 80px;
 }
@@ -261,5 +261,31 @@ body {
   }
   .question_container {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 24px;
+  }
+  .main {
+    padding: 32px;
+    border-radius: 16px;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .sad-face {
+    position: absolute;
+    width: 60vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .phoneDescription {
+    text-align: center;
+    color: var(--light-gray);
+    font-size: 20px;
   }
 }
