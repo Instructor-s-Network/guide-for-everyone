@@ -188,7 +188,7 @@ let dText = [
 let container = document.getElementsByClassName('main')[0]
 
 let seconds = 0
-let minutes = 1
+let minutes = 10
 let score = 0
 let name = ''
 let key = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
