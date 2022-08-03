@@ -319,16 +319,15 @@ function createTest() {
       }
     testAnswers.push(questions[key[i]][n].trueAnswer)
 
-
-    answerDescription = document.createElement('p')
-    answerDescription.textContent = 'Впишите номер правильного ответа. Если их несколько, напишите их в порядке возрастания без пробелов и запятых.';
-    qContainer.appendChild(answerDescription);
-
     answer = document.createElement('input');
     answer.classList.add('input')
     answer.classList.add('userAnswer' + i)
     answer.value = 'Ваш ответ...'
     qContainer.appendChild(answer);
+
+    answerDescription = document.createElement('p')
+    answerDescription.textContent = 'Впишите номер возможного ответа. Если их несколько, напишите их в порядке возрастания без пробелов и запятых.';
+    qContainer.appendChild(answerDescription);
   }
 
   window.onblur = function() {
