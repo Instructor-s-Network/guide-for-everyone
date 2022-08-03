@@ -157,7 +157,6 @@ body {
 }
 .question_container p:nth-child(7) {
   color: var(--red);
-  opacity: 80%;
   margin-top: 16px;
   font-size: 20px;
 }
