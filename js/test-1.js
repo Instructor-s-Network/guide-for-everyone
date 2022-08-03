@@ -441,7 +441,7 @@ function resultFinishTest() {
 
   header = document.createElement('p')
   header.classList.add('h1');
-  header.textContent = 'Тест пройден!';
+  header.textContent = 'Ответы проверены.';
   info.appendChild(header);
 
   header = document.createElement('p')
