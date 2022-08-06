@@ -423,24 +423,25 @@ function checkAnswers() {
     let answer = document.getElementsByClassName('userAnswer' + i)[0]
     let n = answer.value
 
-    //console.log(n);
+    //console.log('User answer ', n);
+    //console.log('True Answer ', testAnswers[i]);
 
     if (n.length > testAnswers[i].length) {
       n = '0'
     }
 
-    console.log(testAnswers[i]);
+    //console.log(testAnswers[i]);
 
     for (let l = 0; l < n.length; l++) {
       for (let k = 0; k < testAnswers[i].length; k++) {
         if (testAnswers[i][k] == n[l]){
           testAnswers[i][k] = 'checked'
-          score = score + Math.round(1 / testAnswers[i].length)
-          //console.log(score);
-          //console.log('- - -');
+          score = score + (1 / testAnswers[i].length)
         }
       }
     }
+    //console.log('Баллы', score);
+  //  console.log('- - -');
   }
 }
 
@@ -523,9 +524,9 @@ function resultFinishTest() {
 }
 
 function showResult() {
-  if (score >= 10) {
+  if (score >= 9.9) {
     return('./images/resultA+.svg')
-  } else if ((score < 10) && (score >= 8)) {
+  } else if ((score < 9.9) && (score >= 8)) {
     return('./images/resultA.svg')
   } else if ((score < 8) && (score >= 7)) {
     return('./images/resultB.svg')
