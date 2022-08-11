@@ -232,8 +232,8 @@ let dText = [
 
 let container = document.getElementsByClassName('main')[0]
 
-let seconds = 10
-let minutes = 0
+let seconds = 0
+let minutes = 10
 let score = 0
 let name = ''
 let key = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -429,7 +429,7 @@ function checkAnswers() {
       let answer = document.getElementsByClassName('userAnswer' + i + k)[0]
       if (answer.checked) {
         antiCheat ++
-        console.log('Choosed ', antiCheat);
+        //console.log('Choosed ', antiCheat);
       }
     }
   }
@@ -440,7 +440,7 @@ function checkAnswers() {
       maxAnswers ++
     }
   }
-  console.log('Choosed ', maxAnswers);
+  //console.log('Choosed ', maxAnswers);
 
   if (antiCheat > Math.floor((35 + maxAnswers) / 2)) {
     score = -10
@@ -449,10 +449,10 @@ function checkAnswers() {
   for (let i = 0; i < testAnswers.length; i++) {
     for (let k = 0; k < testAnswers[i].length; k++) {
       let answer = document.getElementsByClassName('userAnswer' + i + (testAnswers[i][k] - 1))[0]
-      console.log(answer.checked);
+      //console.log(answer.checked);
       if (answer.checked) {
         score = score + (1 / testAnswers[i].length)
-        console.log(score);
+        //console.log(score);
       }
     }
   }
