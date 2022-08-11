@@ -15,7 +15,6 @@
 body {
   background-color: var(--dark-gray);
   padding: 32px;
-  cursor: url('../images/cursor.svg'), auto;
 
   -ms-user-select: none;
 	-moz-user-select: none;
@@ -89,7 +88,6 @@ body {
 .button:hover {
   padding: 72px 96px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.75);
-  cursor: url('../images/cursor-hover.svg'), pointer;
 }
 
 .finishTest {
@@ -140,32 +138,21 @@ body {
   font-size: 20px;
 }
 
-.question_container p:nth-child(1) {
-  margin-bottom: 16px;
+.answer-container {
+  margin-top: 12px;
 }
-.question_container p:nth-child(2) {
-  margin-bottom: 8px;
+.answer {
+  display: inline;
+  width: 18px;
+  height: 18px;
+  background-color: var(--light-gray);
 }
-.question_container p:nth-child(3) {
-  margin-bottom: 8px;
-}
-.question_container p:nth-child(4) {
-  margin-bottom: 8px;
-}
-.question_container p:nth-child(5) {
-  margin-bottom: 16px;
-}
-.question_container p:nth-child(7) {
-  color: var(--red);
-  margin-top: 16px;
-  font-size: 20px;
+.variants {
+  margin-left: 8px;
+  display: inline;
 }
 
-.test div:nth-child(11) {
-  margin-bottom: 0px;
-}
-
-.input {
+.user-name{
   background: none;
   padding: 12px 24px;
   border-radius: 32px;
@@ -173,10 +160,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   width: 100%;
-}
-
-.input:hover {
-  cursor: url('../images/cursor-hover.svg'), auto;
 }
 
 .input:focus {
@@ -235,7 +218,6 @@ body {
   transition: 0.5s;
 }
 .alert-button:hover {
-  cursor: url('../images/cursor-hover.svg'), auto;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.75);
 }
 
